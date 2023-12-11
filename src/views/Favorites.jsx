@@ -10,11 +10,7 @@ const Favorites = () => {
     <div>
       <h1>Fotos favoritas</h1>
       <div className="p-3 gallery grid-columns-4">
-        {
-          liked.length
-          ? liked.map((photo) => <Card key={photo.id} photo={photo} />)
-          : <p>No hay fotos favoritas</p>
-        }
+        {liked.length ? liked.map((photo) => <Card key={photo.id} photo={photo} />) : <h3>No hay fotos favoritas</h3>}
       </div>
     </div>
   );
